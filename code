@@ -1,0 +1,56 @@
+Let's make a game!
+  name:Men Clicker
+  author:M. Hall
+
+Resources
+  *menCoins
+	name:Men Coins
+	desc:Currency
+  *menToes
+	name:Men's Toes
+	desc:Premium Currency
+  *octupusMan
+	name:Octopus MAN Coins
+	desc:UBER Premium Currency
+
+Buildings
+  *toes
+	name:Toes
+	desc:Get 0.1 Men Coins each second
+	cost:30 menCoins
+	on tick:yield 0.1 menCoins
+  *feet
+	name:Feet Pics
+	desc:Get 1 Men Coin each second
+	cost:100 menCoins
+	on tick:yield 1 menCoins
+  *gripTentacles
+	name:Stroke Tentacles
+	desc:OP AF
+	cost:5000 menCoins
+	on tick:yield 10 octupusMan
+
+Buttons
+  *menButton
+    name:Get men
+    desc:Click this to get men
+    on click:yield 1 menCoins
+	no tooltip
+  *tentacleButton
+    name:Grip tentacles
+    desc:Click this to grip them tentacles
+    on click:yield 1 octupusMan
+
+Upgrades
+  *maidens
+    name:Get maidens
+	desc:I bet you can't
+    passive:multiply yield of menButton by 2
+    cost:200 menCoins
+  *unlockButton
+    name:Grab Toes
+	desc:Unlock the Toes button
+    passive:multiply yield of menButton by 2
+    cost:200 menCoins
+
+//https://orteil.dashnet.org/igm/?g=EkuzZa8n
